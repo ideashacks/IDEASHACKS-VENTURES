@@ -316,6 +316,27 @@ p {
 }
 
 </style> 
+	    
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 		
 		<!-- CSS
 		================================================== -->
@@ -352,9 +373,10 @@ p {
 	    
 <meta name="facebook-domain-verification" content="wkrzzdk16q1xh99e4odjuwdvvzgcig" />
 
-	</head>
+</head>
 	
-    <body id="body">
+
+<body id="body">
     
 	    <div id="fb-root"></div>
 		<!--<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=636930200434226&autoLogAppEvents=1"></script>
@@ -546,17 +568,7 @@ Visibility:visible;
         <!--
         End Home SliderEnd
         ==================================== -->
-				
-				  
-			<!-- about section -->
-			<!--
-			<div box-shadow: 0px -10px;>		
-				<img src="img/VirtualOffice.png" alt="VirtualOffice | The Unit | IDEASHACKS" class="responsive"></img>
-			</div>-->
-			<!-- end about section -->
-												       
-										 
-			<!-- about section -->
+	<!-- about section -->
 			<section id="about">
 				<div class="container">
 					<div class="row">
@@ -580,14 +592,15 @@ Visibility:visible;
 								<h4>Our Core Values: <br>Community | Sustainability | Leanness | Accessibility <br> <br> Reach Us At: <a href="mailto:ventures@ideashacks.com">ventures@ideashacks.com</a></h4>
 							</div>
 							</div>
-</section>			
+			
 			     	 </div>
 						    </div>
 						</div>
 				            </div>
 					</div>
-
+</section>
 			<!-- end about section -->
+			
 										 
 			<!-- Service section -->
 			<section id="service">
