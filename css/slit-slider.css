@@ -25,18 +25,22 @@
 
 
 /*
-.bg-img-1 {
-	background-image: url(https://www.ideashacks.com/img/Banner1.jpg);
+.bg-img-1 .bg-img-1 {
+	background-image: url(../img/slider/Banner1.jpg);
+	.responsive {
+         width: 100%;
+         height: auto;
+          }
 }
 .bg-img-2 {
-	background-image: url(https://www.ideashacks.com/img/Banner1.jpg);
+	background-image: url(../img/slider/Banner1.jpg);
 }*/
 .bg-img-3 {
-	/*background-image: url(https://www.ideashacks.com/img/Banner1.jpg);	
+	background-image: url(../img/slider/Banner1.jpg);	
 }
 .bg-img-3{
 	width: 100%;
-}*/
+}
 	
 
 
