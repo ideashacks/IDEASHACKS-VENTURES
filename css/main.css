@@ -392,7 +392,7 @@ padding: 10px 10px;}
 }
 
 .slide-caption .caption-content {
-    vertical-align: middle;
+    vertical-align: bottom;
     display: table-cell;
 }
 
@@ -400,7 +400,7 @@ padding: 10px 10px;}
     color: #fff;  text-shadow: 0px 0px 4px #333;
     font-size: 52px;
     font-weight:700;
-    margin-bottom: 25px;
+    margin-bottom: 100px;
     text-transform: uppercase;
 }
 
