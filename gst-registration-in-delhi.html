@@ -734,9 +734,7 @@ Visibility:visible;
 <style>
         .ideasection{
            padding-bottom:0px;
-            display: flex;
-		align-item:center;									      
-           
+            display: block;
         }
 	.whychoose{
             margin-left: 100px;
@@ -753,13 +751,24 @@ Visibility:visible;
 												      
             width: 60%;
         }
+											      
+											      .ideasection > .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ideasection .whychoose {
+    width: 50%;
+}
+
+.ideasection .ideashackslogo {
+    width: 50%;
+}
 	 @media (min-width:2000px){
     .ideasection {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        margin: auto;
+	display: block;
     }
     .whychoose{
        
@@ -858,6 +867,13 @@ Visibility:visible;
     .ideashackslogo img{
         width: 100%;
     }
+.ideasection .whychoose {
+    width: 100%;
+}
+
+.ideasection .ideashackslogo {
+    width: 100%;
+}
 }
 
 @media (max-width: 576px) {
