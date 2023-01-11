@@ -36,6 +36,7 @@
 	background-image: url(../img/slider/Banner1.jpg);
 }
 .bg-img-3 {
+	backgrount-attachment:fixed;
 	background-image: url(../img/slider/Banner1.jpg);
 }
 .bg-img-4 {
