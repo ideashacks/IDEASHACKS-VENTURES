@@ -657,7 +657,7 @@ Visibility:visible;
 			<input id="tab5" type="radio" name="tabs">
 			<label for="tab5"><i class="fa fa-envelope-o"></i><span>Contact</span></label>
 
-			<section id="content1" class="tab-content">
+			<section id="content1" class="tab-content section">
 				<h3>WHAT IS GST</h3>
 		      	<p><b>GST</b> (Goods and Services Tax) is an Indirect tax that has replaced many other indirect taxes in India, such as excise duty, VAT, and services tax. As per the changes on the 32nd council it is necessary for each and every business to register themselves under the GST scheme if the overall annual revenue crosses Rs.40 lakhs.</p> 
                 <p>Along with that, the North eastern states of India have an option to choose between 20 lakhs and 40 lakhs. Once you are registered, you will receive a unique 15 digit number i.e GSTIN
@@ -665,7 +665,7 @@ Visibility:visible;
 
 			</section>
 
-			<section id="content2" class="tab-content">
+			<section id="content2" class="tab-content section">
 				<h3>BENEFITS OF GST REGISTRATION IN DELHI</h3>
 		      	<p>Previously there were many other service taxes like VAT, each of which had in own return & compliances Now, there is only one common tax i.e GST.</p>
                     <p>  With GST Registration in Delhi, Small trader benefit from the composition scheme.
@@ -677,7 +677,7 @@ Visibility:visible;
                      <p>With GST Registration in Delhi it helps business to grow and expand.</p>
 			</section>
 
-			<section id="content3" class="tab-content">
+			<section id="content3" class="tab-content section">
 				<h3>WHO IS REQUIRED TO GET GST REGISTRATION IN DELHI</h3>
 		      	<p>Any business whose turnover in a financial year exceeds Rs 20 lakhs (Rs10 lakhs for special category states in GST) is required to get GST registration in Delhi.</p>
                    <p>  Any entity or supplier dealing in inter-state supply of goods.
@@ -687,7 +687,7 @@ Visibility:visible;
 		      	
 			</section>
 
-			<section id="content4" class="tab-content">
+			<section id="content4" class="tab-content section">
 				<h3>WHAT ARE THE RULESTO GET GST REGISTRATION IN DELHI?</h3>
 		      	<p>A single tax known as the Goods and Services Tax is anticipated to replace a variety of indirect taxes like VAT, customs duty, excise, CST, service tax, and entertainment tax.</p>
                     <p> In India, there will essentially be two types of GST, both at the interstate level (when goods move within a state) and the intra-state level (when goods travel between states)</p>
@@ -698,7 +698,7 @@ Visibility:visible;
 		      
 			</section>
 
-			<section id="content5" class="tab-content">
+			<section id="content5" class="tab-content section">
 				<h3>TYPES OF GST IN DELHI</h3>
                 <p><b>CGST </b>The Central government levies CGST on the intra-state transactions of goods and services. It is levied alongside SGST or UGST, and the collected revenues are shared equally between the central and the state.</p>
 
@@ -720,7 +720,24 @@ Visibility:visible;
 			 <style>
     @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
-
+ *,
+        *:after,
+        *:before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .clearfix:before,
+        .clearfix:after {
+            content: " ";
+            display: table;
+        }
+        
+        .clearfix:after {
+            clear: both;
+        }
+        
 
 h1 {
 	color: #ccc;
@@ -741,7 +758,7 @@ a {
 	position: relative;
 }
 
-input, section {
+input, .section {
   clear: both;
   padding-top: 10px;
   display: none;
