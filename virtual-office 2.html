@@ -843,13 +843,13 @@ Visibility:visible;
 			
                 </div>
                 <div class="form">
-                    <form action="" id="form" onsubmit="sendEmail(); reset(); return false;">
+                    <form action="" id="form" method="post">
                         <div class="formtext ">
                             <h2 style="font-weight:700">VIRTUAL OFFICES</h2>
 
-                            <input type="text" placeholder="Your Name*" required id="name" ><br>
-                            <input type="email" placeholder="Email Address*" required id="email"><br>
-                            <input type="number" placeholder="Contact No*" maxlength="10" required id="number"><br>
+                            <input type="text" placeholder="Your Name*" required id="name" name="name"><br>
+                            <input type="email" placeholder="Email Address*" required id="email" name="email"><br>
+                            <input type="number" placeholder="Contact No*" maxlength="10" required id="number" name="number"><br>
 				<button class="formsubmit" style="background-color: #FF7F50;">REQUEST A CALL BACK</button><br>
                         </div>
                     </form>
@@ -1452,26 +1452,28 @@ Virtual office allows you to access a professional business centre’s services 
 
         });
     </script>
+<?php 
+if(isset($_POST['submit'])){
+    $to = "gauravs0082@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    // You cannot use header and echo together. It's one or the other.
+    }
+?>
 
 
-		<script src=" https://smtpjs.com/v3/smtp.js"></script>
-		<script>
-		function sendEmail(){
-		Email.send({
-		    Host : "smtp.gmail.com",
-		    Username : "gauravs0082@gmail.com",
-		    Password : "Gaurav@1234",
-		    To : 'gauravs0082@gmail.com',
-		    From : document.getElementById("email").value,
-		    Subject : "New Customer Information",
-		    Body : "And this is the body"
-		}).then(
-		  message => alert(message)
-		);
-		
-		}
-		
-		</script>
 </body>
 
 </html>
