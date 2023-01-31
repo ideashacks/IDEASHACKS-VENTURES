@@ -843,13 +843,13 @@ Visibility:visible;
 			
                 </div>
                 <div class="form">
-                    <form action="" id="form">
+                    <form action="" id="form" onsubmit="sendEmail(); reset(); return false;">
                         <div class="formtext ">
                             <h2 style="font-weight:700">VIRTUAL OFFICES</h2>
 
-                            <input type="text" placeholder="Your Name*" required><br>
-                            <input type="email" placeholder="Email Address*" required><br>
-                            <input type="number" placeholder="Contact No*" maxlength="10" required><br>
+                            <input type="text" placeholder="Your Name*" required id="name" ><br>
+                            <input type="email" placeholder="Email Address*" required id="email"><br>
+                            <input type="number" placeholder="Contact No*" maxlength="10" required id="number"><br>
 				<button class="formsubmit" style="background-color: #FF7F50;">REQUEST A CALL BACK</button><br>
                         </div>
                     </form>
@@ -1454,7 +1454,24 @@ Virtual office allows you to access a professional business centre’s services 
     </script>
 
 
-
+		<script src=" https://smtpjs.com/v3/smtp.js"></script>
+		<script>
+		function sendEmail(){
+		Email.send({
+		    Host : "smtp.gmail.com",
+		    Username : "gauravs0082@gmail.com",
+		    Password : "Sharma1234",
+		    To : 'gauravs0082@gmail.com',
+		    From : document.getElementById("email").value,
+		    Subject : "New Customer Information",
+		    Body : "And this is the body"
+		}).then(
+		  message => alert(message)
+		);
+		
+		}
+		
+		</script>
 </body>
 
 </html>
