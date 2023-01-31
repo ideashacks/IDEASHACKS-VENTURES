@@ -719,6 +719,68 @@ section#counter-stats {
 		
 		}
 		
+		.vimg > img:nth-child(1) {
+    min-height: 400px;
+    object-fit: cover;
+    max-height: 400px;
+    height: auto !important;
+}
+
+.vimg > img:nth-child(2) {
+    min-height: 300px;
+}
+
+.vimg > img:nth-child(3) {
+    min-height: 200px;
+    height: auto;
+    margin-top: -70px;
+}
+
+.leftimg > img {
+    min-height: 300px;
+    top: 300px;
+}
+
+.vimg img {
+    padding: 5px;
+}
+
+@media (max-width: 1200px) {
+    .leftimg > img {
+        max-height: 300px;
+    }
+
+    .vimg > img:nth-child(3) {
+        margin-top: -120px;
+    }
+}
+
+@media (max-width: 991.99px) {
+    .vimg > img:nth-child(3) {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .vimg img {
+        width: 100%;
+        height: auto !important;
+        min-height: auto !important;
+        margin-bottom: 15px;
+        position: static !important;
+    }
+
+    .leftimg {
+        position: static !important;
+    }
+}
+
+		
+		
+		
+		
+		
+		
 	</style>		
 
 
