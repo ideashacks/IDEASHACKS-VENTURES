@@ -1577,6 +1577,50 @@ Visibility:visible;
 </section>
 						
 			<!-- end Contact section -->
+						 <!-- start count stats -->
+        <hr>
+	    <link rel:stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <section id="counter-stats" id="section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 stats">
+                       <i class="fa fa-plus" aria-hidden="true" style="color: #FF7F50; font-size: 25px; margin-left: 60px;     font-weight: 800;"></i>
+			    <div class="counting" data-count="500" >0</div>
+                        <h5>VIRTUAL ADDRESS</h5>
+                    </div>
+
+                    <div class="col-lg-3 stats">
+                        <i class="fa fa-plus" aria-hidden="true" style="color: #FF7F50; font-size: 25px; margin-left: 60px;     font-weight: 800;"></i>
+                        <div class="counting" data-count="1000">0</div>
+                        <h5>HAPPY CO-WORKING CUSTOMER</h5>
+                    </div>
+
+                    <div class="col-lg-3 stats">
+                        <i class="fa fa-plus" aria-hidden="true" style="color: #FF7F50; font-size: 25px; margin-left: 60px;     font-weight: 800;"></i>
+                        <div class="counting" data-count="600">0</div>
+                        <h5>ALUMNI</h5>
+                    </div>
+
+                    <div class="col-lg-3 stats">
+                        <i class="fa fa-plus" aria-hidden="true" style="color: #FF7F50;font-size: 25px;margin-left: 115px;     font-weight: 800;"></i>
+                        <div class="counting" data-count="540000">0</div>
+                        <h5>GOURMET COFFEE SURVED</h5>
+                    </div>
+
+
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+
+        </section>
+        <hr>
+        <!-- end cont stats -->
+						
+						
+						
+						
 		</main>
 		
 		
@@ -1797,6 +1841,38 @@ Visibility:visible;
 		
 		<!-- Essential jQuery Plugins
 		================================================== -->
+			 <script>
+         
+
+        // number count for stats, using jQuery animate
+
+        $('.counting').each(function () {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+
+            $({ countNum: $this.text() }).animate({
+                countNum: countTo
+            },
+
+                {
+
+                    duration: 30000,
+                    easing: 'linear',
+                    step: function () {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                        $this.text(this.countNum);
+                        //alert('finished');
+                    }
+
+                });
+
+
+        });
+    </script>
+
+
 		<!-- Main jQuery -->
         <script src="js/jquery-1.11.1.min.js"></script>
 		<!-- Twitter Bootstrap -->
