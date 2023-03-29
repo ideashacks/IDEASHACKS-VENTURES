@@ -5,8 +5,235 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diversity</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <link rel="icon" href="Favicon.png" type="image/png" sizes="16x16">
+      <!-- header cdn link  -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <!-- header cdn link  -->
+    <style>
+          /*	Header
+/* ==========================================*/
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #FF7F50;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.btn:hover {
+    color: white;
+}
+
+#navigation {
+    -webkit-transition: all 0.8s ease 0s;
+    -moz-transition: all 0.8s ease 0s;
+    -ms-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+
+    background-color: rgba(0, 0, 0, .6);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 5px 0;
+}
+
+#navigation.animated-header {
+    padding: 20px 0;
+}
+
+h1.navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav>li>a {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+
+/* header css */
+
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* end header css */
+
+        #bgsection{
+            background-image: url('Di-Hero-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        .bgsection{
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
+      <!--    Fixed Navigation 
+        ====================================  -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- responsive nav button -->
     
+                    <!-- logo -->
+                    <h1 class="navbar-brand" style="position:relative; top:-50">
+                        <a href="https://www.ideashacks.com"><img src="img/Logo_IDEASHACKSVENTURES_WHITE.png" alt="Logo"
+                                height="400%" padding="-50"></a>
+                    </h1>
+                    <!-- /logo -->
+                </div>
+    
+                <!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li Style="display:none;"><a href="#body">Home</a></li>
+                        <li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">CO-SPACES</a>
+                            <div class="dropdown-content">
+                                <a href="https://theunit.ideashacks.com">The Unit | Faridabad</a>
+                                <a href="https://10gulmohar.ideashacks.com">10Gulmohar | Gurgaon</a>
+                                <a href="https://aerohub.ideashacks.com">Coming Soon | Punjab</a>
+                            </div>
+                        </li>
+                        </li>
+                        <li>
+                        <li class="dropdown">
+                            <a href="#price" class="dropbtn">SERVICES</a>
+                            <div class="dropdown-content">
+                                <a href="https://www.ideashacks.com/gst-registration">GST SERVICES</a>
+                                <a href="https://www.ideashacks.com/">INCORPORATION SERVICES</a>
+                                <a href="virtual-office">VIRTUAL OFFICE</a>
+                            </div>
+                        </li>
+                        </li>
+                        <li><a href="#contact">Contact Us</a> </li>
+                        <li><a title="9AM to 6PM" href="tel:+91-8448777687"><i class="fa fa-phone"></i>+91-8448777687</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /main nav -->
+                <!--    End Navigation 
+            ====================================  -->
+        </header>
+    <section id="bgsection">
+        <div class="container">
+            <div class="row">
+                <div class="bgsection">
+                    <h2>At IDEASHACKS VENTURES</h2>
+                    <p>we recognize the importance of diversity and inclusivity in creating a workplace that is welcoming and supportive of all individuals, regardless of their backgrounds. We strive to create an environment where everyone feels valued and respected, and where different perspectives and ideas are celebrated.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="commitment">
+                    <div class="commitmentheading">
+                    <h2>Our commitment to diversity and inclusion is reflected in the following policies and practices:</h2>
+                </div>
+                <div class="commitmentmain">
+                    <div class="commitmenttext">
+                    <h2>Recruitment and Hiring:</h2>
+                    <p>We actively seek to recruit a diverse pool of candidates for all positions, and we make every effort to ensure that our hiring process is fair and equitable. We do not discriminate on the basis of race, color, religion, gender, sexual orientation, national origin, age, disability, or any other protected status.</p>
+                </div>
+                <div class="commitmenttext">
+                    <h2>Training and Development:</h2>
+                    <p>We provide ongoing training and development opportunities to all employees to help them build the skills and knowledge they need to succeed in their roles. We encourage employees from all backgrounds to participate in these programs and to contribute their unique perspectives and experiences.</p>
+                </div>
+                <div class="commitmenttext">
+                    <h2>Workplace Culture: </h2>
+                    <p> We foster a culture of respect and inclusivity, where all employees feel comfortable and supported. We do not tolerate harassment, discrimination, or any other form of disrespectful behavior. We encourage open communication, active listening, and constructive feedback to promote a positive work environment.</p>
+                </div>
+                <div class="commitmenttext">
+                    <h2>Employee Resource Groups:</h2>
+                    <p>We support employee resource groups (ERGs) to provide a forum for employees to connect with each other, share experiences, and promote diversity and inclusion within the company. We encourage all employees to participate in ERGs and to contribute to their activities.</p>
+                </div>
+                <div class="commitmenttext">
+                    <h2>Community Outreach: </h2>
+                    <p>We recognize the importance of supporting the communities in which we live and work. We actively seek opportunities to partner with organizations that promote diversity and inclusion, and we encourage our employees to participate in volunteer activities that support these efforts.</p>
+                </div>
+
+                <div class="commitmentlasttext">
+                    <p>We believe that diversity and inclusion are not only important values, but also essential for the success of our business. We are committed to creating a workplace that reflects the diversity of our customers, partners, and communities, and we will continue to work towards this goal every day.</p>
+                </div>
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
