@@ -13,27 +13,22 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.ideashacks.com/shacklabs.html</loc>
+  <loc>https://www.ideashacks.com/</loc>
+  <lastmod>2021-05-23T08:02:12+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.ideashacks.com/virtual-office</loc>
   <lastmod>2021-05-23T08:02:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ideashacks.com/referral.html</loc>
+  <loc>https://www.ideashacks.com/gst-registration</loc>
   <lastmod>2021-05-23T08:02:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ideashacks.com/careers.html</loc>
-  <lastmod>2021-05-23T08:02:12+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ideashacks.com/gst-registration-in-delhi.html</loc>
-  <lastmod>2021-05-23T08:02:12+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ideashacks.com/virtual-office.html</loc>
+  <loc>https://www.ideashacks.com/careers</loc>
   <lastmod>2021-05-23T08:02:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
