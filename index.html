@@ -414,6 +414,24 @@ p {
 
   gtag('config', 'AW-843526917');
 </script>
+
+<!-- Event snippet for Location conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-843526917/IGV6CJL9vKIZEIXmnJID',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 	    
 <meta name="facebook-domain-verification" content="wkrzzdk16q1xh99e4odjuwdvvzgcig" />
 <script src="https://kit.fontawesome.com/4de9b54342.js" crossorigin="anonymous"></script>
