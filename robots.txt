@@ -1,3 +1,10 @@
-User-Agent: *
-Disallow:
-Sitemap: https://www.ideashacks.com/sitemap.xml
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /scripts/
+Disallow: /10gulmohar/
+Disallow: /careers.html
+
+Allow: /the-unit/
+Allow: /
